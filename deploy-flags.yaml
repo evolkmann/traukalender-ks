@@ -6,7 +6,7 @@
 --runtime: nodejs18
 --source: dist
 --set-env-vars:
-  LOCATIONS: "668,824"
+  LOCATIONS: "668,824,876"
   YEAR: "2024"
   MONTH_MIN: "4"
   MONTH_MAX: "9"
