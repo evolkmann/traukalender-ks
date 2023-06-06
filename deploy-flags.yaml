@@ -1,0 +1,12 @@
+--gen2:
+--trigger-http:
+--allow-unauthenticated:
+--project: trautermine-ks
+--region: europe-west3
+--runtime: nodejs18
+--source: dist
+--set-env-vars:
+  LOCATIONS: "668,824"
+  YEAR: "2024"
+  MONTH_MIN: "4"
+  MONTH_MAX: "9"

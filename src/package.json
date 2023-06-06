@@ -1,0 +1,8 @@
+{
+  "name": "traukalender-cloud-function",
+  "dependencies": {
+    "@google-cloud/functions-framework": "3.2.0",
+    "luxon": "3.3.0",
+    "node-fetch": "3.3.1"
+  }
+}
