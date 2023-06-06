@@ -7,6 +7,7 @@ import {
   queryApi,
   Tooltip,
 } from "./api";
+import { locations } from "./env";
 import { sendSlackMessage } from "./slack";
 
 export async function main(): Promise<string[]> {
@@ -25,7 +26,6 @@ export async function main(): Promise<string[]> {
   if (!isValidMonth(monthMax)) {
     throw new Error("MONTH_MAX must be a number");
   }
-  const locations = process.env.LOCATIONS?.split(",") || [];
 
   for (const location of locations) {
     if (!isValidLocation(location)) {
