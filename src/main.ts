@@ -7,6 +7,7 @@ import {
   queryApi,
   Tooltip,
 } from "./api";
+import { sendSlackMessage } from "./slack";
 
 export async function main(): Promise<string[]> {
   const logs: string[] = [];
@@ -52,6 +53,11 @@ export async function main(): Promise<string[]> {
         log(`--> No appointments`, logs);
       }
     }
+  }
+
+  if (anyAppointmentsFound) {
+    await sendSlackMessage(`Es gibt freie Termine!\n\n${logs.join("\n")}`);
+    log("Sent Slack notification", []);
   }
 
   return logs;

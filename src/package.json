@@ -2,6 +2,7 @@
   "name": "traukalender-cloud-function",
   "dependencies": {
     "@google-cloud/functions-framework": "3.2.0",
+    "@slack/bolt": "3.13.1",
     "luxon": "3.3.0",
     "node-fetch": "3.3.1"
   }
